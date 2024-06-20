@@ -4,9 +4,13 @@ declare(strict_types=1);
 
 namespace Drupal\event\Service;
 
+use Drupal\Core\Datetime\DrupalDateTime;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Queue\QueueFactory;
+use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
 use Drupal\event\Storage\DrupalEventStorageInterface;
+use Drupal\event\ValueObject\TodayDate;
+use Drupal\node\NodeInterface;
 
 final class EventService
 {

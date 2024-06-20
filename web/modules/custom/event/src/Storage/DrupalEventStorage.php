@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Drupal\event\Storage;
 
 use Drupal\Core\Entity\Sql\SqlContentEntityStorage;
+use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
 use Drupal\event\Entity\DrupalEventInterface;
 use Drupal\event\ValueObject\TodayDate;
 use Drupal\node\NodeInterface;
@@ -47,6 +48,14 @@ final class DrupalEventStorage extends SqlContentEntityStorage implements Drupal
 
   public function getExpiredEvents(): array
   {
-    return [1041];
+    $current_time = TodayDate::now();
+
+    $query = $this->getQuery()
+      ->accessCheck()
+      ->condition('type', 'event')
+      ->condition('status', NodeInterface::PUBLISHED)
+      ->condition('field_date_range', $current_time->formatForDatabase(), '<');
+
+    return $query->execute();
   }
 }
