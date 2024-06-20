@@ -1,0 +1,63 @@
+services:
+  php:
+    image: wodby/drupal-php:8.1
+    container_name: "adimeo_php"
+    environment:
+      DB_HOST: mariadb
+      DB_PORT: 3306
+      DB_USERNAME: drupal
+      DB_PASSWORD: drupal
+      DB_NAME: drupal
+      DB_DRIVER: mysql
+    volumes:
+      - ./:/var/www/html:cached
+
+  nginx:
+    image: wodby/nginx:latest
+    container_name: "adimeo_nginx"
+    depends_on:
+      - php
+    environment:
+      NGINX_STATIC_OPEN_FILE_CACHE: "off"
+      NGINX_ERROR_LOG_LEVEL: debug
+      NGINX_BACKEND_HOST: php
+      NGINX_SERVER_ROOT: /var/www/html/web
+      NGINX_VHOST_PRESET: php
+    volumes:
+      - ./:/var/www/html:cached
+    labels:
+      - "traefik.http.routers.adimeo_nginx.rule=Host(`adimeo.localhost`)"
+
+  mariadb:
+    image: wodby/mariadb:latest
+    container_name: "adimeo_mariadb"
+    stop_grace_period: 30s
+    environment:
+      MYSQL_ROOT_PASSWORD: drupal
+      MYSQL_DATABASE: drupal
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
+    volumes:
+      - ./mariadb-init:/docker-entrypoint-initdb.d
+
+  adminer:
+    container_name: "adimeo_adminer"
+    init: true
+    image: wodby/adminer:latest
+    environment:
+      ADMINER_DEFAULT_DB_DRIVER: mysql
+      ADMINER_DEFAULT_DB_HOST: mariadb
+      ADMINER_DEFAULT_DB_NAME: drupal
+    labels:
+      - "traefik.http.routers.adimeo_adminer.rule=Host(`adminer.adimeo.localhost`)"
+
+  traefik:
+    image: traefik:v2.10
+    container_name: "adimeo_traefik"
+    command: --api.insecure=true --providers.docker
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+

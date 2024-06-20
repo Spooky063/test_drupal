@@ -1,0 +1,9 @@
+name: Event
+description: Create block and action for event content type.
+package: Adimeo
+
+type: module
+core_version_requirement: ^9.2 || ^10
+
+dependencies:
+  - drupal:node

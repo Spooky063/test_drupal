@@ -1,0 +1,59 @@
+<?php
+
+declare(strict_types=1);
+
+use Drupal\event\Entity\DrupalEvent;
+use Drupal\Core\Block\BlockManagerInterface;
+use Drupal\event\Plugin\Block\EventBlock;
+use Drupal\event\Storage\DrupalEventStorage;
+
+function event_help(string $route_name): ?string
+{
+  $output = null;
+
+  switch ($route_name) {
+    case 'help.page.event':
+      $text = file_get_contents(dirname(__FILE__) . "/README.md");
+      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+        $output = '<pre>' . $text . '</pre>';
+      } else {
+        $filter_manager = \Drupal::service('plugin.manager.filter');
+        $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
+        $config = ['settings' => $settings];
+        $filter = $filter_manager->createInstance('markdown', $config);
+        //@phpstan-ignore-next-line
+        $output = $filter->process($text, 'en');
+      }
+  }
+
+  return $output;
+}
+
+function event_entity_bundle_info_alter(array &$bundles): void
+{
+  if (isset($bundles['node']['event'])) {
+    $bundles['node']['event']['class'] = DrupalEvent::class;
+  }
+}
+
+function event_entity_type_alter(array &$entity_types): void
+{
+  $entity_types['node']->setStorageClass(DrupalEventStorage::class);
+}
+
+function event_preprocess_node__event(array &$variables): void
+{
+  if (!isset($variables['view_mode']) || $variables['view_mode'] === 'teaser') {
+    return;
+  }
+
+  /** @var BlockManagerInterface $block_manager */
+  $block_manager = \Drupal::service('plugin.manager.block');
+
+  /** @var EventBlock $block */
+  $block = $block_manager->createInstance('event_related');
+  $block->setContextValue('event', $variables['node']);
+
+  $variables['content']['event_related'] = $block->build();
+  $variables['content']['event_related']['#weight'] = 500; // Push section to the bottom of the page
+}
