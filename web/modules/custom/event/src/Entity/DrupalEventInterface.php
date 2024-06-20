@@ -17,4 +17,6 @@ interface DrupalEventInterface
    * @return array<array-key, DrupalEventInterface>
    */
   public function getXRelatedEventExceptItself(int $term_id, int $nid, int $length_to_reach): array;
+
+  public function setUnpublished(): void;
 }

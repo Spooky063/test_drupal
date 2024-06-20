@@ -57,3 +57,10 @@ function event_preprocess_node__event(array &$variables): void
   $variables['content']['event_related'] = $block->build();
   $variables['content']['event_related']['#weight'] = 500; // Push section to the bottom of the page
 }
+
+function event_cron(): void
+{
+  /** @var \Drupal\event\Service\EventService $service */
+  $service = Drupal::service('event.service');
+  $service->addExpiredEventsToQueue();
+}

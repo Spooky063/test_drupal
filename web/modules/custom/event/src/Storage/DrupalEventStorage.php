@@ -44,4 +44,9 @@ final class DrupalEventStorage extends SqlContentEntityStorage implements Drupal
 
     return $query->execute();
   }
+
+  public function getExpiredEvents(): array
+  {
+    return [1041];
+  }
 }

@@ -6,6 +6,7 @@ namespace Drupal\event\Entity;
 
 use Drupal\event\Storage\DrupalEventStorageInterface;
 use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
 use Drupal\taxonomy\TermInterface;
 use Drupal\Core\Field\EntityReferenceFieldItemList;
 
@@ -41,5 +42,10 @@ final class DrupalEvent extends Node implements DrupalEventInterface
     }
 
     return $events;
+  }
+
+  public function setUnpublished(): void
+  {
+    $this->set('status', NodeInterface::NOT_PUBLISHED);
   }
 }

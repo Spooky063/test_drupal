@@ -15,4 +15,9 @@ interface DrupalEventStorageInterface
    * @return array<array-key, string>
    */
   public function getLatestEvent(int $range_length, int $nidExclude): array;
+
+  /**
+   * @return array<array-key, string>
+   */
+  public function getExpiredEvents(): array;
 }
