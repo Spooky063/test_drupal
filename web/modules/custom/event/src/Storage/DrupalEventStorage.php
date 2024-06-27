@@ -5,45 +5,34 @@ declare(strict_types=1);
 namespace Drupal\event\Storage;
 
 use Drupal\Core\Entity\Sql\SqlContentEntityStorage;
-use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
-use Drupal\event\Entity\DrupalEventInterface;
 use Drupal\event\ValueObject\TodayDate;
 use Drupal\node\NodeInterface;
+use Exception;
 
 final class DrupalEventStorage extends SqlContentEntityStorage implements DrupalEventStorageInterface
 {
 
-  public function getLatestEventByTermId(int $termId, int $nidExclude): array
+  /**
+   * @throws Exception
+   */
+  public function getLatestEventByTermId(int $termId, int $nidExclude, int $lengthMax = 3): array
   {
     $current_time = TodayDate::now();
 
-    $query = $this->getQuery()
-      ->accessCheck()
+    $query = $this->database->select('node_field_data', 'n');
+    $query->leftJoin('node__field_date_range', 'dr', 'dr.entity_id = n.nid');
+    $query->leftJoin('node__field_event_type', 'et', 'et.entity_id = n.nid');
+    $query->addExpression('CASE WHEN field_event_type_target_id = :type THEN 1 ELSE 2 END', 'term_choose_first', [':type' => $termId]);
+    $query->fields('n', ['nid'])
       ->condition('type', 'event')
       ->condition('status', NodeInterface::PUBLISHED)
       ->condition('nid', $nidExclude, '<>')
-      ->condition('field_event_type.target_id', $termId)
-      ->condition('field_date_range.end_value', $current_time->getDateTime(), '>=')
-      ->sort('created', 'ASC')
-      ->range(0, 3);
+      ->condition('dr.field_date_range_end_value', $current_time->formatForDatabase(), '>=')
+      ->orderBy('term_choose_first')
+      ->orderBy('created')
+      ->range(0, $lengthMax);
 
-    return $query->execute();
-  }
-
-  public function getLatestEvent(int $range_length, int $nidExclude): array
-  {
-    $current_time = TodayDate::now();
-
-    $query = $this->getQuery()
-      ->accessCheck()
-      ->condition('type', 'event')
-      ->condition('status', NodeInterface::PUBLISHED)
-      ->condition('nid', $nidExclude, '<>')
-      ->condition('field_date_range.end_value', $current_time->getDateTime(), '>=')
-      ->sort('created', 'ASC')
-      ->range(0, $range_length);
-
-    return $query->execute();
+    return $query->execute()->fetchCol();
   }
 
   public function getExpiredEvents(): array

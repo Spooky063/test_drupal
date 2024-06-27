@@ -2,6 +2,6 @@
 
 ## Features
 
-- Creation of a block related the X latest event content type (1h45)
-- Unpublished the event with event date exceed (1h but not optimized yet)
+- Creation of a block related the X latest event content type (2h)
+- Unpublished the event with event date exceed (1h15 but not optimized yet)
 

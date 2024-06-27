@@ -12,6 +12,8 @@ use Drupal\Core\Field\EntityReferenceFieldItemList;
 
 final class DrupalEvent extends Node implements DrupalEventInterface
 {
+  public const BUNDLE = 'event';
+
   public function getEventTermId(): int
   {
     /** @var EntityReferenceFieldItemList $event_type_list */
@@ -22,30 +24,21 @@ final class DrupalEvent extends Node implements DrupalEventInterface
     return (int) $event_term_list[0]->id();
   }
 
-  public function getRelatedEventByTermIdExceptItself(int $term_id, int $nid): array
+  public function getXRelatedEventExceptItself(int $term_id, int $nid, int $lengthMax): array
   {
     /** @var DrupalEventStorageInterface $eventStorage */
     $eventStorage = $this->entityTypeManager()->getStorage('node');
-    return $eventStorage->getLatestEventByTermId($term_id, $nid);
-  }
-
-  public function getXRelatedEventExceptItself(int $term_id, int $nid, int $length_to_reach): array
-  {
-    /** @var DrupalEventStorageInterface $eventStorage */
-    $eventStorage = $this->entityTypeManager()->getStorage('node');
-
-    $events = $this->getRelatedEventByTermIdExceptItself($term_id, $nid);
-
-    $number_remaining = $length_to_reach - \count($events);
-    if ($number_remaining < $length_to_reach) {
-      $events = [...$events, ...$eventStorage->getLatestEvent($number_remaining, $nid)];
-    }
-
-    return $events;
+    return $eventStorage->getLatestEventByTermId($term_id, $nid, 3);
   }
 
   public function setUnpublished(): void
   {
     $this->set('status', NodeInterface::NOT_PUBLISHED);
+  }
+
+  public function getCacheTagsToInvalidate()
+  {
+    $tagToInvalidate = ['node_list:event', 'event_related'];
+    return [...parent::getCacheTagsToInvalidate(), ...$tagToInvalidate];
   }
 }

@@ -30,8 +30,8 @@ final class EventUnpublishQueueWorker extends QueueWorkerBase implements QueueWo
     array $configuration,
     $plugin_id,
     $plugin_definition,
+    protected BatchBuilder $batchBuilder,
     protected EntityTypeManagerInterface $entityTypeManager,
-    protected CacheTagsInvalidatorInterface $cacheTagsInvalidator,
     protected LoggerInterface $logger,
   ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
@@ -47,8 +47,8 @@ final class EventUnpublishQueueWorker extends QueueWorkerBase implements QueueWo
       $configuration,
       $plugin_id,
       $plugin_definition,
+      $container->get('batch.builder'),
       $container->get('entity_type.manager'),
-      $container->get('cache_tags.invalidator'),
       $container->get('event.channel.event'),
     );
   }
@@ -56,14 +56,11 @@ final class EventUnpublishQueueWorker extends QueueWorkerBase implements QueueWo
   public function processItem($data)
   {
       $event = $this->entityTypeManager->getStorage('node')->load($data);
-      if (!$event instanceof DrupalEventInterface) {
-        return;
-      }
+      assert($event instanceof DrupalEventInterface, sprintf('This entity %s is not an event', $event->id()));
 
       $event->setUnpublished();
       $event->save();
 
       $this->logger->info(sprintf('Unpublished event #%d.', $event->id()));
-      $this->cacheTagsInvalidator->invalidateTags([sprintf('event::%d', $data), 'event_list']);
   }
 }
