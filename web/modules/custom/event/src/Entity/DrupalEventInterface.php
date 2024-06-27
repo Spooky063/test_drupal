@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Drupal\event\Entity;
 
-interface DrupalEventInterface
+use Drupal\node\NodeInterface;
+
+interface DrupalEventInterface extends NodeInterface
 {
-  public function getEventTermId(): int;
+    public function getEventTermId(): int;
 
   /**
-   * @return array<array-key, DrupalEventInterface>
+   * @return array<array-key, string>
    */
-  public function getXRelatedEventExceptItself(int $term_id, int $nid, int $lengthMax): array;
-
-  public function setUnpublished(): void;
+    public function getXRelatedEventExceptItself(int $term_id, int $nid, int $lengthMax): array;
 }

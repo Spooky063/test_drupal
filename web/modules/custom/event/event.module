@@ -9,58 +9,58 @@ use Drupal\event\Storage\DrupalEventStorage;
 
 function event_help(string $route_name): ?string
 {
-  $output = null;
+    $output = null;
 
-  switch ($route_name) {
-    case 'help.page.event':
-      $text = file_get_contents(dirname(__FILE__) . "/README.md");
-      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
-        $output = '<pre>' . $text . '</pre>';
-      } else {
-        $filter_manager = \Drupal::service('plugin.manager.filter');
-        $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
-        $config = ['settings' => $settings];
-        $filter = $filter_manager->createInstance('markdown', $config);
-        //@phpstan-ignore-next-line
-        $output = $filter->process($text, 'en');
-      }
-  }
+    switch ($route_name) {
+        case 'help.page.event':
+            $text = file_get_contents(dirname(__FILE__) . "/README.md");
+            if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+                $output = '<pre>' . $text . '</pre>';
+            } else {
+                $filter_manager = \Drupal::service('plugin.manager.filter');
+                $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
+                $config = ['settings' => $settings];
+                $filter = $filter_manager->createInstance('markdown', $config);
+              //@phpstan-ignore-next-line
+                $output = $filter->process($text, 'en');
+            }
+    }
 
-  return $output;
+    return $output;
 }
 
 function event_entity_bundle_info_alter(array &$bundles): void
 {
-  if (isset($bundles['node']['event'])) {
-    $bundles['node'][DrupalEvent::BUNDLE]['class'] = DrupalEvent::class;
-  }
+    if (isset($bundles['node']['event'])) {
+        $bundles['node'][DrupalEvent::BUNDLE]['class'] = DrupalEvent::class;
+    }
 }
 
 function event_entity_type_alter(array &$entity_types): void
 {
-  $entity_types['node']->setStorageClass(DrupalEventStorage::class);
+    $entity_types['node']->setStorageClass(DrupalEventStorage::class);
 }
 
 function event_preprocess_node__event(array &$variables): void
 {
-  if (!isset($variables['view_mode']) || $variables['view_mode'] === 'teaser') {
-    return;
-  }
+    if (!isset($variables['view_mode']) || $variables['view_mode'] === 'teaser') {
+        return;
+    }
 
   /** @var BlockManagerInterface $block_manager */
-  $block_manager = \Drupal::service('plugin.manager.block');
+    $block_manager = \Drupal::service('plugin.manager.block');
 
   /** @var EventBlock $block */
-  $block = $block_manager->createInstance('event_related');
-  $block->setContextValue('event', $variables['node']);
+    $block = $block_manager->createInstance('event_related');
+    $block->setContextValue('event', $variables['node']);
 
-  $variables['content']['event_related'] = $block->build();
-  $variables['content']['event_related']['#weight'] = 500; // Push section to the bottom of the page
+    $variables['content']['event_related'] = $block->build();
+    $variables['content']['event_related']['#weight'] = 500; // Push section to the bottom of the page
 }
 
 function event_cron(): void
 {
   /** @var \Drupal\event\Service\EventService $service */
-  $service = Drupal::service('event.service');
-  $service->addExpiredEventsToQueue();
+    $service = Drupal::service('event.service');
+    $service->addExpiredEventsToQueue();
 }

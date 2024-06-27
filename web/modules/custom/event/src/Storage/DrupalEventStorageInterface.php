@@ -14,12 +14,12 @@ interface DrupalEventStorageInterface
    * @param int $lengthMax The number of record to return.
    * @return array<array-key, string>
    */
-  public function getLatestEventByTermId(int $termId, int $nidExclude, int $lengthMax = 3): array;
+    public function getLatestEventByTermId(int $termId, int $nidExclude, int $lengthMax = 3): array;
 
   /**
    * Return all node of type event expired.
    *
    * @return array<array-key, string>
    */
-  public function getExpiredEvents(): array;
+    public function getExpiredEvents(): array;
 }
