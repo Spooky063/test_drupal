@@ -47,10 +47,10 @@ function event_preprocess_node__event(array &$variables): void
         return;
     }
 
-  /** @var BlockManagerInterface $block_manager */
+    /** @var BlockManagerInterface $block_manager */
     $block_manager = \Drupal::service('plugin.manager.block');
 
-  /** @var EventBlock $block */
+    /** @var EventBlock $block */
     $block = $block_manager->createInstance('event_related');
     $block->setContextValue('event', $variables['node']);
 
@@ -60,7 +60,7 @@ function event_preprocess_node__event(array &$variables): void
 
 function event_cron(): void
 {
-  /** @var \Drupal\event\Service\EventService $service */
+    /** @var \Drupal\event\Service\EventService $service */
     $service = Drupal::service('event.service');
     $service->addExpiredEventsToQueue();
 }

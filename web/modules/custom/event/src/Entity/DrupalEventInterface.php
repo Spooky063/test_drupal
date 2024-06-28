@@ -10,8 +10,8 @@ interface DrupalEventInterface extends NodeInterface
 {
     public function getEventTermId(): int;
 
-  /**
-   * @return array<array-key, string>
-   */
+    /**
+     * @return array<array-key, string>
+     */
     public function getXRelatedEventExceptItself(int $term_id, int $nid, int $lengthMax): array;
 }

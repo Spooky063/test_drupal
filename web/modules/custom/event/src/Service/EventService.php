@@ -22,7 +22,7 @@ final class EventService
     {
         $queue = $this->queue->get(self::EVENT_WORKER_UNPUBLISHED_NAME);
 
-      /** @var DrupalEventStorageInterface $eventStorage */
+        /** @var DrupalEventStorageInterface $eventStorage */
         $eventStorage = $this->entityTypeManager->getStorage('node');
         $expiredEvents = $eventStorage->getExpiredEvents();
 

@@ -11,9 +11,9 @@ use Exception;
 
 final class DrupalEventStorage extends SqlContentEntityStorage implements DrupalEventStorageInterface
 {
-  /**
-   * @throws Exception
-   */
+    /**
+     * @throws Exception
+     */
     public function getLatestEventByTermId(int $termId, int $nidExclude, int $lengthMax = 3): array
     {
         $current_time = TodayDate::now();
