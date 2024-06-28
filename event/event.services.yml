@@ -1,0 +1,13 @@
+services:
+  event.channel.event:
+    parent: logger.channel_base
+    arguments: [ 'event' ]
+
+  event.service:
+    class: Drupal\event\Service\EventService
+    arguments: ['@entity_type.manager', '@queue']
+
+  event.queue_worker:
+    class: Drupal\event\Plugin\QueueWorker\EventUnpublishQueueWorker
+    tags:
+      - { name: queue_worker, title: 'Event Unpublish Worker', cron: true }

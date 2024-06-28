@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d4c302e5-3801-427c-824a-b77fcaeea5c2" name="Changes" comment="feat: clean project to handover">
+      <change beforePath="$PROJECT_DIR$/config/sync/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/admin_toolbar.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/admin_toolbar_tools.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/automated_cron.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.claro_breadcrumbs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.claro_content.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.claro_local_actions.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.claro_messages.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.claro_page_title.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.claro_primary_local_tasks.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.claro_secondary_local_tasks.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_account_menu.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_breadcrumbs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_content.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_main_menu.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_messages.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_page_title.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_powered.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_primary_admin_actions.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_primary_local_tasks.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_search_form_narrow.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_search_form_wide.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_secondary_local_tasks.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_site_branding.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.olivero_syndicate.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_account_menu.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_branding.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_breadcrumbs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_content.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_footer.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_local_actions.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_local_tasks.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_main_menu.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_messages.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_page_title.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_powered.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_search.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/block.block.test_drupal_tools.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/claro.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.base_field_override.node.event.promote.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.base_field_override.node.event.title.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.fallback.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.html_date.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.html_datetime.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.html_month.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.html_time.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.html_week.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.html_year.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.html_yearless_date.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.long.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.medium.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.olivero_medium.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.date_format.short.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_form_display.node.event.default.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_form_display.taxonomy_term.event_type.default.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_form_display.user.user.default.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_form_mode.user.register.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_display.node.event.default.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_display.node.event.teaser.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_display.taxonomy_term.event_type.default.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_display.user.user.compact.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_display.user.user.default.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_mode.node.full.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_mode.node.rss.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_mode.node.search_index.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_mode.node.search_result.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_mode.node.teaser.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_mode.taxonomy_term.full.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_mode.user.compact.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.entity_view_mode.user.full.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.extension.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/core.menu.static_menu_link_overrides.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/dblog.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/editor.editor.basic_html.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/editor.editor.full_html.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.field.node.event.body.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.field.node.event.field_date_range.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.field.node.event.field_event_type.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.field.node.event.field_image.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.field.node.event.field_string_long.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.field.user.user.user_picture.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.storage.node.body.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.storage.node.field_date_range.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.storage.node.field_event_type.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.storage.node.field_image.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.storage.node.field_string_long.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field.storage.user.user_picture.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/field_ui.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/file.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/filter.format.basic_html.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/filter.format.full_html.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/filter.format.plain_text.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/filter.format.restricted_html.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/filter.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/image.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/image.style.large.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/image.style.medium.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/image.style.thumbnail.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language.content_settings.node.event.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language.content_settings.path_alias.path_alias.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language.content_settings.taxonomy_term.event_type.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language.entity.fr.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language.entity.und.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language.entity.zxx.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language.mappings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language.negotiation.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language.types.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/search.page.node_search.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/search.page.user_search.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/views.view.archive.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/views.view.content.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/views.view.content_recent.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/views.view.files.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/views.view.frontpage.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/views.view.glossary.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/views.view.taxonomy_term.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/views.view.user_admin_people.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/views.view.watchdog.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/views.view.who_s_new.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/language/fr/views.view.who_s_online.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/locale.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/menu_ui.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/node.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/node.type.event.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/olivero.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/search.page.node_search.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/search.page.user_search.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/search.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/shortcut.set.default.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.node_delete_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.node_make_sticky_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.node_make_unsticky_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.node_promote_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.node_publish_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.node_save_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.node_unpromote_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.node_unpublish_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.taxonomy_term_publish_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.taxonomy_term_unpublish_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.user_add_role_action.administrator.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.user_block_user_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.user_cancel_user_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.user_remove_role_action.administrator.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.action.user_unblock_user_action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.advisories.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.cron.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.date.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.diff.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.file.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.image.gd.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.image.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.logging.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.mail.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.maintenance.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.menu.account.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.menu.admin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.menu.footer.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.menu.main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.menu.tools.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.performance.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.rss.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.site.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.theme.global.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/system.theme.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/taxonomy.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/taxonomy.vocabulary.event_type.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/text.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/update.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/upgrade_status.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/user.flood.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/user.mail.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/user.role.administrator.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/user.role.anonymous.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/user.role.authenticated.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/user.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.view.archive.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.view.content.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.view.content_recent.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.view.files.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.view.frontpage.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.view.glossary.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.view.taxonomy_term.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.view.user_admin_people.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.view.watchdog.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.view.who_s_new.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sync/views.view.who_s_online.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mariadb-init/dump.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.csslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.ht.router.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/INSTALL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/example.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/event/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/event.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/event/event.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/event.module" beforeDir="false" afterPath="$PROJECT_DIR$/event/event.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/event.services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/event/event.services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/src/Entity/DrupalEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/event/src/Entity/DrupalEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/src/Entity/DrupalEventInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/event/src/Entity/DrupalEventInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/src/Plugin/Block/EventBlock.php" beforeDir="false" afterPath="$PROJECT_DIR$/event/src/Plugin/Block/EventBlock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/src/Plugin/QueueWorker/EventUnpublishQueueWorker.php" beforeDir="false" afterPath="$PROJECT_DIR$/event/src/Plugin/QueueWorker/EventUnpublishQueueWorker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/src/Service/EventService.php" beforeDir="false" afterPath="$PROJECT_DIR$/event/src/Service/EventService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/src/Storage/DrupalEventStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/event/src/Storage/DrupalEventStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/src/Storage/DrupalEventStorageInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/event/src/Storage/DrupalEventStorageInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/event/src/ValueObject/TodayDate.php" beforeDir="false" afterPath="$PROJECT_DIR$/event/src/ValueObject/TodayDate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/profiles/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sites/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sites/default/default.services.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sites/default/default.settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sites/default/settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sites/development.services.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sites/example.settings.local.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sites/example.sites.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/custom/test_drupal/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/custom/test_drupal/assets/css/test_drupal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/custom/test_drupal/assets/js/test_drupal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/custom/test_drupal/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/custom/test_drupal/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/custom/test_drupal/templates/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/custom/test_drupal/test_drupal.info.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/custom/test_drupal/test_drupal.libraries.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web.config" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/drupal-core-fixture/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/PhpStorage/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Utility/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/drupal-assets-fixture/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/ClassFinder/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/modules/system/tests/fixtures/HtaccessTest/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Plugin/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Version/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/scaffold-override-fixture/composer.json" />
+      <option value="$PROJECT_DIR$/web/modules/contrib/admin_toolbar/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/empty-fixture-allowing-core/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Datetime/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/FrontMatter/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/FileSecurity/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/ProxyBuilder/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Assertion/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Render/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Discovery/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/project-with-empty-scaffold-path/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/project-with-illegal-dir-scaffold/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Serialization/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Gettext/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/FileCache/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/HttpFoundation/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Diff/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/EventDispatcher/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Uuid/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Annotation/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Transliteration/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/Graph/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/FileSystem/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/empty-file/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/empty-fixture/composer.json" />
+      <option value="$PROJECT_DIR$/web/core/lib/Drupal/Component/DependencyInjection/composer.json" />
+    </option>
+  </component>
+  <component name="ComposerSettings" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2i8XaQ1JpZubNdjEkmL2jarzbr8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/gastier/lab/test-adimeo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/mariadb-init" />
+      <recent name="$PROJECT_DIR$/web/sites/default" />
+      <recent name="$PROJECT_DIR$/web/sites" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.17890.8" />
+        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.17890.8" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4c302e5-3801-427c-824a-b77fcaeea5c2" name="Changes" comment="" />
+      <created>1718873240548</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718873240548</updated>
+      <workItem from="1718873241636" duration="21016000" />
+      <workItem from="1719522276157" duration="10918000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: apply sast">
+      <option name="closed" value="true" />
+      <created>1719529653907</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719529653907</updated>
+    </task>
+    <task id="LOCAL-00002" summary="doc: finish documentation">
+      <option name="closed" value="true" />
+      <created>1719532906963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719532906963</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: apply sast" />
+    <MESSAGE value="doc: finish documentation" />
+    <MESSAGE value="feat: clean project to handover" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: clean project to handover" />
+  </component>
+</project>
