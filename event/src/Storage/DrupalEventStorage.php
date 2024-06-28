@@ -28,7 +28,7 @@ final class DrupalEventStorage extends SqlContentEntityStorage implements Drupal
         ->condition('nid', $nidExclude, '<>')
         ->condition('dr.field_date_range_end_value', $current_time->formatForDatabase(), '>=')
         ->orderBy('term_choose_first')
-        ->orderBy('created')
+        ->orderBy('dr.field_date_range_value')
         ->range(0, $lengthMax);
 
         return $query->execute()->fetchCol();
